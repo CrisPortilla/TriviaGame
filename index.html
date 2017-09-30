@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <title>Trivia Game</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Harry Potter Trivia</h1>
+        <br>
+        <p>To begin this duel, press the START button!</p>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button type="button" class="btn btn-success btn-lg" id="startGame">START</button>
+            </div>
+        </div>
+        <div>
+            <div class="questions-container" id="hiddenDiv">
+                <div class="row">
+                    <div class="well well-lg" id="countdown"></div>
+                    <div>
+                        <ul class="list-group">
+                            <li class="list-group-item" id="the-question"></li>
+                            <li class="list-group-item choice" id="option-0"></li>
+                            <li class="list-group-item choice" id="option-1"></li>
+                            <li class="list-group-item choice" id="option-2"></li>
+                            <li class="list-group-item choice" id="option-3"></li>
+                        </ul>
+                    </div>
+                    <div id="response"></div>
+                </div>
+            </div>
+            <div id="results-panel">
+                <div class="well well-lg">
+                    <h1>Let's see how you did:</h1></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Correct Answers:</h3>
+                    </div>
+                    <div class="panel-body text-left">
+                        <h1 id="correct-answers"></h1>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Incorrect Answers:</h3>
+                    </div>
+                    <div class="panel-body text-left">
+                        <h1 id="incorrect-answers"></h1></div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Unanswered Questions:</h3>
+                    </div>
+                    <div class="panel-body text-left">
+                        <h1 id="unanswered"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="restartGame">
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-success btn-lg" id="restart">Try Again?</button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/javascript/app.js">
+        </script>
+</body>
+
+</html>

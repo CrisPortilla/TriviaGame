@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    background-image: url('../images/howarts.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #00FF00;
+    font-weight: bold;
+}
+
+.jumbotron {
+}
+
+
+#hiddenDiv {
+    display: none;
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+}
+
+
+#response {
+    padding-top: 30px;
+}
+
+.btn-lg {
+    
+}
+
+#startGame {
+    display: block;
+}
+
+#restart {
+    display: none;
+}
+
+#results-panel {
+    display: none;
+}
+
+#the-question {
+    color: #00FF00;
+    margin-top: 20px;
+    margin-bottom: 20px
+    font-weight: bold;
+    size: 26pt;
+}
